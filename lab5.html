@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сторінка з CSS атрибутами</title>
+  <style>
+    /* background */
+    body {
+      background-color: lightblue;
+      background-image: url('background-image.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    /* border */
+    .border-example {
+      border-width: 2px;
+      border-color: red;
+      border-style: dashed;
+      border-radius: 10px;
+    }
+
+    /* text */
+    .text-example {
+      color: purple;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    /* font */
+    .font-example {
+      font-family: 'Times New Roman', serif;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: italic;
+      text-decoration: line-through;
+    }
+
+    /* table */
+    .table-example {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .table-example th, .table-example td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .table-example th {
+      background-color: lightgray;
+    }
+
+    .table-example tr:nth-child(even) {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+    <a class="button" href="index.html">Повернутися на головну сторінку</a>
+  <div class="border-example">Приклад з границею</div>
+
+  <p class="text-example">Приклад з текстом</p>
+
+  <p class="font-example">Приклад з шрифтом</p>
+
+  <table class="table-example">
+    <thead>
+      <tr>
+        <th>Заголовок 1</th>
+        <th>Заголовок 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Комірка 1</td>
+        <td>Комірка 2</td>
+      </tr>
+      <tr>
+        <td>Комірка 3</td>
+        <td>Комірка 4</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

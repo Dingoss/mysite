@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя сторінка з CSS-селекторами</title>
+  <style>
+    /* Базові селектори */
+    h1 {
+      color: red;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    .highlight {
+      background-color: yellow;
+    }
+    
+    #myDiv {
+      border: 1px solid black;
+    }
+    
+    /* Селектори псевдокласів та поєднання селекторів */
+    a:hover {
+      color: blue;
+    }
+    
+    li:nth-child(odd) {
+      background-color: lightgray;
+    }
+    
+    p + p {
+      font-style: italic;
+    }
+    
+    h1 ~ p {
+      text-decoration: underline;
+    }
+    
+    /* Лінійка */
+    .ruler {
+      display: flex;
+      align-items: center;
+    }
+    
+    .ruler span {
+      width: 10px;
+      height: 2px;
+      background-color: black;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+<a class="button" href="index.html">Повернутися на головну сторінку</a>
+  <h1>Заголовок</h1>
+  
+  <p>Цей абзац має базовий стиль.</p>
+  
+  <p class="highlight">Цей абзац має клас "highlight"</p>
+  
+  <div id="myDiv">
+    Цей блок має ідентифікатор "myDiv" і рамку.
+  </div>
+  
+  <ul>
+    <li>Елемент 1</li>
+    <li>Елемент 2</li>
+    <li>Елемент 3</li>
+  </ul>
+  
+  <p>Перший абзац підсилює другий абзац за допомогою селектора "+".</p>
+  
+  <h2>Підзаголовок</h2>
+  
+  <p>Цей абзац є наступником заголовка за допомогою селектора "~".</p>
+  
+  <div class="ruler">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</body>
+</html>
